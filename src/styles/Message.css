@@ -1,0 +1,32 @@
+#messageItem {
+  margin-bottom: 10px;
+  padding: 1px 10px;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  max-width: 80%;
+  font-size: 14px;
+}
+
+.messageItem--outgoing {
+  background-color: #dcf8c6;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.messageItem--incoming {
+  background-color: #ffffff;
+  margin-left: 10px;
+}
+
+.messageItem__content {
+  word-wrap: break-word;
+}
+
+.messageItem__timestamp {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  color: #999999;
+}

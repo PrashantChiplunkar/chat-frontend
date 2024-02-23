@@ -1,0 +1,48 @@
+/* InputBar.css - Styles for the InputBar component */
+
+/* Style for the input field container */
+.inputFieldContainer {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.input-bar {
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  width: 30%;
+}
+
+/* Style for the input field where users type their message */
+#inputField {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width:60%;
+}
+
+/* Style for the send button */
+#sendButton {
+  padding: 10px 15px;
+  background-color: #009688;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Change send button color on hover to indicate interactivity */
+#sendButton:hover {
+  background-color: #00796b;
+}
+
+/* Disable text selection on the send button */
+#sendButton::selection {
+  background: none;
+}

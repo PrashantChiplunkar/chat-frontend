@@ -1,0 +1,48 @@
+/* ChatWindow.css - Styles for the ChatWindow component */
+
+/* Container for the entire chat window */
+#chatWindowContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e5ddd5;
+  width: 30%;
+}
+
+/* Styles for the message list area */
+#messageList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styles for the message input area */
+#messageInput {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+/* Styles for the send button */
+#sendButton {
+  background-color: #075E54;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 10px 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Ensures the send button and input field are aligned */
+#sendButton,
+#messageInput {
+  align-self: flex-end;
+}
+
+/* Additional styles can be added below as needed */

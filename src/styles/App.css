@@ -1,0 +1,65 @@
+/* App.css - Global styles for the App component */
+
+/* Reset some default styles for a consistent look across browsers */
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Set up a flex container for the entire app to center the chat window */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2; /* Light grey background similar to WhatsApp */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* WhatsApp-like font */
+}
+
+/* Add some padding around the chat window for aesthetics */
+.chatWindowContainer {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  border-radius: 8px; /* rounded corners */
+  overflow: hidden; /* ensures child elements do not break border-radius */
+  background-color: #fff; /* white background for the chat window */
+}
+
+/* Style for the message list to make it scrollable */
+.messageList {
+  overflow-y: auto;
+  height: 500px; /* fixed height for the message list */
+  padding: 10px; /* spacing around messages */
+}
+
+/* Style for the message input area */
+.messageInput {
+  border: none;
+  padding: 10px;
+  width: calc(100% - 20px); /* full width minus padding */
+  box-sizing: border-box; /* include padding in width calculation */
+}
+
+/* Style for the send button */
+.sendButton {
+  background-color: #09d261; /* WhatsApp green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer; /* indicates the button is clickable */
+  border-radius: 4px; /* rounded corners for the button */
+}
+
+/* Add hover effect for the send button */
+.sendButton:hover {
+  background-color: #0ba951; /* slightly darker green on hover */
+}
+
+/* Ensure the input bar stays at the bottom */
+.inputBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #ddd; /* light grey border */
+}
